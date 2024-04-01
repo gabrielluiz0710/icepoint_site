@@ -1,0 +1,617 @@
+/* Para navegadores baseados em Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 15px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #2AB1D3; /* cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2498b5; /* cor da alça da barra de rolagem */
+    border-radius: 10px; /* borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e7f98; /* cor da alça da barra de rolagem ao passar o mouse */
+}
+
+/* Para navegadores baseados no Firefox */
+body {
+    scrollbar-color: #2498b5 #2AB1D3; /* cor da alça da barra de rolagem e cor de fundo da barra de rolagem */
+    scrollbar-width: thin; /* largura da barra de rolagem */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Adiciona uma cor de fundo ao corpo */
+}
+
+.containe_header {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+}
+
+/* Adicione esta regra para alinhar os itens à direita */
+.containe_header nav {
+    margin-left: auto;
+}
+
+/* Estilo para o texto do cabeçalho */
+.containe_header nav ul li a {
+    text-decoration: none;
+    color: white; /* Cor padrão dos links */
+    font-size: 16px; /* Tamanho padrão da fonte */
+    font-weight: 700; /* Peso da fonte SemiBold */
+}
+
+/* Estilo para o texto do cabeçalho ao passar o mouse */
+.containe_header nav ul li a:hover {
+    font-weight: 800; /* Peso da fonte ExtraBold ao passar o mouse */
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #5CE1E6; /* Azul */
+    color: #FFFFFF; /* Branco */
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+/* Estilo para os links */
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Cor padrão dos links */
+    font-size: 16px; /* Tamanho padrão da fonte */
+}
+
+/* Estilo para os links ao passar o mouse */
+nav ul li a:hover {
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 17px; /* Aumenta o tamanho da fonte */
+    color: white; /* Mantém a cor preta ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-left: 20px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: white; /* Cor padrão dos links */
+    margin-left: 20px; /* Espaçamento entre os ícones */
+}
+
+.redes-sociais a:hover {
+    color: white; /* Mantém a cor branca ao passar o mouse */
+}
+
+#header {
+    background-color: #FE758F; /* Azul */
+    color: #FFFFFF; /* Branco */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Certifica-se de que o cabeçalho esteja sempre na frente de outros elementos */
+    transition: top 0.1s ease; /* Adiciona uma transição suave ao deslizar para baixo */
+}
+
+.redes-sociais img {
+    height: 30px; /* Ajuste a altura conforme necessário */
+}
+
+h2,
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para ocultar o cabeçalho */
+.hidden {
+    top: -100px; /* Move o cabeçalho para cima */
+}
+
+/* Estilo para a seção */
+.home-onde-tem {
+    background-color: #19c5cb; /* Cor de fundo */
+    padding-top: 0rem; /* Aumenta o preenchimento superior */
+    padding-bottom: 0rem; /* Aumenta o preenchimento inferior */
+}
+
+.conteudo_ondetem{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Define a largura máxima */
+}
+
+/* Estilo para o título */
+.main-bottom h1 {
+    margin-top: 30px;
+    font-family: 'Sriracha', cursive;
+    color: #FFFFFF;
+    margin-bottom: 50px; /* Adiciona um espaço vertical após o título */
+}
+
+/* Estilo para o texto */
+.main-bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Estilo para o botão de localização */
+.btn-localizacao {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block; /* Permite que o botão se comporte como um elemento de bloco dentro do texto */
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave de 0.3s */
+}
+
+.btn-localizacao:hover {
+    background-color: #ff1d46; /* Altera a cor de fundo ao passar o mouse */
+    color: #FFFFFF; /* Altera a cor do texto ao passar o mouse */
+    text-decoration: none;
+}
+
+.content-milkshake img {
+    transform: scale(1.2); /* Define um zoom de 1.2 vezes o tamanho original */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.content-milkshake img:hover {
+    transform: scale(1.4); /* Define um zoom maior quando o mouse estiver sobre a imagem */
+}
+
+/* Estilo para o container flexível */
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    margin-right: 0px; /* Adiciona um espaçamento na parte direita */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+
+/* Imagem responsiva */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Oculta imagens pequenas e médias em telas grandes */
+.large-screen, .medium-screen, .small-screen {
+    display: none;
+}
+
+/* Mostra imagens pequenas em telas menores ou iguais a 400px */
+@media (max-width: 400px) {
+    .small-screen {
+        display: block;
+    }
+}
+
+/* Mostra imagens médias em telas entre 401px e 720px */
+@media (min-width: 401px) and (max-width: 720px) {
+    .medium-screen {
+        display: block;
+    }
+}
+
+/* Mostra imagens grandes em telas maiores que 720px */
+@media (min-width: 721px) {
+    .large-screen {
+        display: block;
+    }
+}
+
+/* Estilo para a colagem de fotos */
+.colagem {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Defina a altura desejada para a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Estilo para a imagem na colagem */
+.imagem-colagem {
+    max-width: 100%; /* Define a largura máxima para a imagem */
+    max-height: 100%; /* Define a altura máxima para a imagem */
+}
+
+
+/* Estilo para a seção */
+#historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Imagens/fundo_parede.jpg'); /* Caminho para sua imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Estilo para o título */
+#historia h1 {
+    font-family: 'Sriracha', cursive;
+    color: #23b1ca;
+    font-weight: 900;
+    font-size: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#produto h1{
+  font-size: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilo para a linha das imagens */
+.imagem-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada imagem na linha */
+.imagem-esquerda, .imagem-direita {
+    width: 10%; /* Ajuste conforme necessário */
+    transform: scale(1.4);  
+}
+
+/* Estilo para dividir a seção em duas colunas */
+.coluna-direita {
+    width: 50%;
+    float: left;
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+}
+
+/* Estilo para dividir a seção em duas colunas */
+.coluna-esquerda {
+    width: 50%;
+    float: left;
+    margin-top: 1%;
+    padding: 20px 20px; /* Espaçamento nas margens esquerda e direita */
+    text-align: center;
+}
+
+/* Estilo para o botão Saiba Mais */
+.btn-saiba-mais {
+    margin-top: 10px;
+    background-color: #23b1ca;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block; /* Permite que o botão se comporte como um elemento de bloco dentro do texto */
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave de 0.3s */
+}
+
+.btn-saiba-mais:hover {
+    background-color: #13798b; /* Altera a cor de fundo ao passar o mouse */
+    color: #FFFFFF; /* Altera a cor do texto ao passar o mouse */
+    text-decoration: none;
+}
+
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font-family: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --bg-color-option1: #fff;
+  --text-color: #292c2d;
+  --white-color: #fff;
+}
+
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--font-family); /* Aplicando a fonte Poppins globalmente */
+}
+
+.img_card{
+  width: 100%;
+}
+
+/* ------------ CARD ----------- */
+.card__img-container,
+.card__info{
+  transition: 0.25s ease;
+}
+
+.card__price,
+.card__product-details,
+.card__size,
+.card__btn{
+  transition: 0.25s ease;
+}
+
+/* Container para os cards */
+.card-container {
+    display: flex; /* Exibe os cards como flexíveis */
+    flex-wrap: wrap; /* Permite que os cards envolvam para a próxima linha quando não houver espaço suficiente */
+    justify-content: flex-start; /* Alinha os cards no início da linha */
+    margin: 0 -1%; /* Adiciona espaçamento lateral negativo para compensar o espaçamento nos cards */
+}
+
+/* Estilo para os cards */
+.card {
+    width: calc(33.33% - 2%); /* Define a largura dos cards */
+    margin: 1%; /* Adiciona espaçamento entre os cards */
+    flex-grow: 0; /* Não permite que os cards cresçam para preencher o espaço disponível */
+    box-sizing: border-box; /* Mantém a largura definida, incluindo padding e borda */
+}
+.card{
+  width: 16em;
+  height: 21em;
+  background-color: var(--bg-color-option1) !important; /* Cor de fundo definida aqui */
+  border-radius: 1.5em !important;
+  box-shadow: 0 0.5em 0.5em rgba(0,0,0, .2);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 1%; /* Espaçamento das margens esquerda e direita */
+  margin-top: 40px;
+}
+
+.card__img-container{
+  width: 10em;
+  position: absolute;
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.card__info{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  padding: 0 1em;
+  overflow: hidden;
+}
+
+.card__title{
+  margin-top: 2em;
+  font-size: 1.25rem;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+
+.card__price{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255,255,255, .7);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.15em;
+  border-radius: 0.5em;
+  margin: 0.25em 0.5em;
+}
+
+.card__description{
+  font-size: 0.68rem;
+  text-align: left;
+  margin-bottom: 0.4em;
+}
+
+.card__product-details{
+  margin-top: 1em;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__sizes,
+.card__colors{
+  margin-bottom: 0.25em;
+}
+
+.card__sizes span,
+.card__colors span{
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  margin-bottom: 0.15em;
+}
+
+.card__size{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.9em;
+  height: 0.9em;
+  background-color: var(--white-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 0 0.2em;
+  border-radius: 0.1em;
+  cursor: pointer;
+}
+
+.card__size:hover{
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+
+.card__color{
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin: 0 0.25em;
+  cursor: pointer;
+}
+
+.card__color:hover{
+  border: 2px solid var(--white-color);
+}
+
+.card__color--option1{
+  background-color: var(--circle1-color);
+}
+
+.card__color--option2{
+  background-color: var(--circle2-color);
+}
+
+.card__btn{
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 10em;
+  height: 2em;
+  background-color: #FE758F;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  align-self: center;
+  text-decoration: none;
+}
+
+.card__btn a{
+  color: #FFFFFF;
+  text-decoration: none !important;
+}
+
+.card__btn,
+.card__btn a {
+  color: #FFFFFF; /* Defina a cor do texto do botão */
+  text-decoration: none !important;
+}
+
+.card__btn:hover,
+.card__btn a:hover {
+  transform: scale(1.1);
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  background-color: #f54d6c;
+}
+
+.card__btn:active,
+.card__btn a:active {
+  color: #FFFFFF !important; /* Mantenha a cor do texto do botão quando clicado */
+}
+/* --------- CARD HOVER ------------- */
+.card:hover .card__img-container{
+  transform: rotate(-25deg);
+  top: -3em;
+}
+
+.card:hover .card__info{
+  height: 60%;
+}
+
+.card:hover .card__price{
+  opacity: 1;
+}
+
+.card:hover .card__description{
+  font-size: 0.68rem;
+  max-height: initial; /* Redefine a altura máxima para mostrar todo o texto */
+}
+
+.card:hover .card__product-details{
+  opacity: 1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_footer img {
+  width: 200px; 
+  height: 200px;/* Ajuste o tamanho conforme necessário */
+}
+
+.contact-info,
+.social-media {
+  flex: 1;
+  padding-left: 15%;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.social-media ul li a {
+  color: white; /* Cor branca para os links */
+}
+
+.social-media ul li a:hover {
+  color: white; /* Mantém a cor branca ao passar o mouse */
+}
+
+.social-media ul li a i {
+  font-size: 24px; /* Defina o tamanho desejado para os ícones */
+  margin-right: 5px; /* Adicione um espaçamento à direita para separar os ícones do texto */
+}
