@@ -226,21 +226,21 @@ p {
 }
 
 /* Mostra imagens pequenas em telas menores ou iguais a 400px */
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .small-screen {
         display: block;
     }
 }
 
 /* Mostra imagens médias em telas entre 401px e 720px */
-@media (min-width: 401px) and (max-width: 720px) {
+@media (min-width: 426px) and (max-width: 1023px) {
     .medium-screen {
         display: block;
     }
 }
 
 /* Mostra imagens grandes em telas maiores que 720px */
-@media (min-width: 721px) {
+@media (min-width: 1024px) {
     .large-screen {
         display: block;
     }
