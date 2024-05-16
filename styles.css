@@ -226,7 +226,7 @@ p {
 }
 
 /* Mostra imagens pequenas em telas menores ou iguais a 400px */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .small-screen {
         display: block;
     }
