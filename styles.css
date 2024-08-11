@@ -343,7 +343,7 @@ footer{
     align-items: right;
 }
 
-/* Estilo para o título */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha:wght@400;500;600&display=swap');
 #historia h1 {
     font-family: 'Sriracha', cursive;
     color: #23b1ca;
