@@ -16,7 +16,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font: "Montserrat";
   --h2-font-size: 1.25rem;
   --normal-font-size: 1rem;
 }
