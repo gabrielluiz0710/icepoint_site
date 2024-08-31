@@ -1,5 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import logo_branca from '../../assets/Imagens/logo_branca.png';
+import whatsapp from '../../assets/Imagens/whatsapp.png';
+import facebook from '../../assets/Imagens/facebook.png';
+import instagram from '../../assets/Imagens/instagram.png';
 import styles from './header.css';
 
 function Header() {
@@ -67,9 +70,9 @@ function Header() {
                 <a href="localizacao">Localização</a>
                 <a href="#">Contato</a>
                 <div className="redes-sociais">
-                    <a href="https://api.whatsapp.com/send?phone=5534999658035" target="_blank"><img src="src/assets/Imagens/whatsapp.png" alt="WhatsApp" className="icon_header"/></a>
-                    <a href="https://www.instagram.com/icepointuberaba" target="_blank"><img src="src/assets/Imagens/instagram.png" alt="Instagram" className="icon_header"/></a>
-                    <a href="https://www.facebook.com/IcePointUberaba" target="_blank"><img src="src/assets/Imagens/facebook.png" alt="Facebook" className="icon_header"/></a>
+                    <a href="https://api.whatsapp.com/send?phone=5534999658035" target="_blank"><img src={whatsapp} alt="WhatsApp" className="icon_header"/></a>
+                    <a href="https://www.instagram.com/icepointuberaba" target="_blank"><img src={instagram} alt="Instagram" className="icon_header"/></a>
+                    <a href="https://www.facebook.com/IcePointUberaba" target="_blank"><img src={facebook} alt="Facebook" className="icon_header"/></a>
                 </div>
             </div>
         </div>
