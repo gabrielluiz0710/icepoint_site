@@ -2,73 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="public/icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Point Sorveteria - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/home.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-    <link rel="stylesheet" href="src/assets/cards/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="src/assets/cards/css/styles.css">
+    <link rel="stylesheet" href="cards/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="cards/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="src/assets/slide.js" defer></script>
+    <script src="slide.js" defer></script>
 </head>
 <body id="body">
-    <div class="header" id="header">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <div class="logo_header">
-            <a href="index.html"><img src="src/assets/Imagens/logo_branca.png" alt="Ice Point" class="img_logo_header"/></a>
-        </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btn_icon_header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Produtos</a>
-            <a href="src/localização.html">Localização</a>
-            <a href="#">Contato</a>
-            <div class="redes-sociais">
-                <a href="https://api.whatsapp.com/send?phone=5534999658035" target="_blank"><img src="src/assets/Imagens/whatsapp.png" alt="WhatsApp" class="icon_header"/></a>
-                <a href="https://www.instagram.com/icepointuberaba" target="_blank"><img src="src/assets/Imagens/instagram.png" alt="Instagram" class="icon_header"/></a>
-                <a href="https://www.facebook.com/IcePointUberaba" target="_blank"><img src="src/assets/Imagens/facebook.png" alt="Facebook" class="icon_header"/></a>
-            </div>
-        </div>
-    </div>
-
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-
-            <div class="slide-box primeiro">
-                <img class="img-desktop" src="src/assets/Imagens/carousel1-medium.jpg" alt="Slide 1">
-                <img class="img-mobile" src="src/assets/Imagens/carousel1-small.jpg" alt="Slide 1">
-            </div>
-
-            <div class="slide-box">
-                <img class="img-desktop" src="src/assets/Imagens/carousel2-medium.jpg" alt="Slide 2">
-                <img class="img-mobile" src="src/assets/Imagens/carousel2-small.jpg" alt="Slide 2">
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-            </div>
-        </div>
-    </section>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 
     <section class="container">
         <div class="card__container swiper">
@@ -78,7 +27,7 @@
                 <div class="swiper-wrapper">
                     <article class="card__article swiper-slide">
                         <div class="card__image">
-                            <img src="src/assets/Imagens/brigadeiro.png" alt="image" class="card__img">
+                            <img src="src/assets/Imagens\brigadeiro.png" alt="image" class="card__img"/>
                             <div class="card__shadow"></div>
                         </div>
 
@@ -94,7 +43,7 @@
 
                     <article class="card__article swiper-slide">
                         <div class="card__image">
-                            <img src="src/assets/Imagens/tentacao.png" alt="image" class="card__img">
+                            <img src="src/assets/Imagens\tentacao.png" alt="image" class="card__img"/>
                             <div class="card__shadow"></div>
                         </div>
 
@@ -110,7 +59,7 @@
 
                     <article class="card__article swiper-slide">
                         <div class="card__image">
-                            <img src="src/assets/Imagens/ituleitecondensado.png" alt="image" class="card__img">
+                            <img src="src/assets/Imagens\ituleitecondensado.png" alt="image" class="card__img"/>
                             <div class="card__shadow"></div>
                         </div>
 
@@ -126,7 +75,7 @@
 
                     <article class="card__article swiper-slide">
                         <div class="card__image">
-                            <img src="src/assets/Imagens/itumaracuja.png" alt="image" class="card__img">
+                            <img src="src/assets/Imagens\itumaracuja.png" alt="image" class="card__img"/>
                             <div class="card__shadow"></div>
                         </div>
 
@@ -142,7 +91,7 @@
 
                     <article class="card__article swiper-slide">
                         <div class="card__image">
-                            <img src="src/assets/Imagens/morangoleite.png" alt="image" class="card__img">
+                            <img src="src/assets/Imagens\morangoleite.png" alt="image" class="card__img"/>
                             <div class="card__shadow"></div>
                         </div>
 
@@ -185,7 +134,7 @@
                 </div>
                 <div class="produto-col2">
                     <div class="class-img-produto">
-                        <img src="Imagens\caracter2.png" class="imagem-produto" id="imagem-produto">
+                        <img src="src/assets/Imagens\caracter2.png" class="imagem-produto" id="imagem-produto">
                     </div>
                 </div>
             </div>     
@@ -202,7 +151,7 @@
                 </div>
                 <div class="historia-col">
                     <div class="colagem">
-                        <img src="Imagens\historia.png" class="imagem-colagem">
+                        <img src="src/assets/Imagens\historia.png" class="imagem-colagem">
                     </div>
                 </div>
             </div>     
@@ -214,28 +163,28 @@
             <div class="row-resumo">
                 <div class="resumo-col">
                     <div class="elemento-resumo">
-                        <img src="Imagens\coracao.png" alt="Coração" class="icon-resumo">
+                        <img src="src/assets/Imagens\coracao.png" alt="Coração" class="icon-resumo">
                         <h1>Mais Amada da Região</h1>
                         <p>Quem prova, comprova: a melhor sorveteria para toda a família.</p>
                     </div>
                 </div>
                 <div class="resumo-col">
                     <div class="elemento-resumo">
-                        <img src="Imagens\ice-cream.png" alt="Sorvete" class="icon-resumo">
+                        <img src="src/assets/Imagens\ice-cream.png" alt="Sorvete" class="icon-resumo">
                         <h1>Variedade que Encanta</h1>
                         <p>Temos tudo que você procura: açaí, sorvete, picolés e muito mais!</p>
                     </div>
                 </div>
                 <div class="resumo-col">
                     <div class="elemento-resumo">
-                        <img src="Imagens\in-love.png" alt="Apaixonado" class="icon-resumo">
+                        <img src="src/assets/Imagens\in-love.png" alt="Apaixonado" class="icon-resumo">
                         <h1>+50 Sabores Diferentes</h1>
                         <p>Mais de 50 opções irresistíveis de sabores únicos!</p>
                     </div>
                 </div>
                 <div class="resumo-col">
                     <div class="elemento-resumo">
-                        <img src="Imagens\money.png" alt="Dinheiro" class="icon-resumo">
+                        <img src="src/assets/Imagens\money.png" alt="Dinheiro" class="icon-resumo">
                         <h1>Tudo com Preço de Fábrica</h1>
                         <p>Todos nossos produtos com preço de fábrica para você!</p>
                     </div>
@@ -256,7 +205,7 @@
                 </div>
                 <div class="loja-col">
                     <div class="class-img-loja">
-                        <img src="Imagens\loja.jpg" class="imagem-loja" id="imagem-loja">
+                        <img src="src/assets/Imagens\loja.jpg" class="imagem-loja" id="imagem-loja">
                         <div class="borda-loja" id="borda-loja"></div>
                     </div>
                 </div>
@@ -277,7 +226,7 @@
         <div class="container-footer">
             <div class="row-footer">
                 <div class="footer-col" style="text-align: center;">
-                    <img src="Imagens/logo_full.png" alt="Ice Point Sorveteria" height="200px" width="200px">
+                    <img src="src/assets/Imagens/logo_full.png" alt="Ice Point Sorveteria" height="200px" width="200px">
                 </div>
                 <div class="footer-col">
                     <h4>Fale Conosco</h4>
@@ -333,9 +282,9 @@
         <p style="text-align: center; font-family: 'Montserrat'; color: #ffffff; font-weight: 500; padding-top: 20px; padding-bottom: 20px; margin-left: 10px; margin-right: 10px;">&copy; Copyright 2024 Ice Point Sorveteria - Todos os direitos reservados.</p>
     </div>
 
-    <script src="src/assets/scripts.js"></script>
-    <script src="src/assets/cards/js/swiper-bundle.min.js"></script>
-    <script src="src/assets/cards/js/main.js"></script>
-    <script src="src/assets/header.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cards/js/swiper-bundle.min.js"></script>
+    <script src="cards/js/main.js"></script>
+    <script src="header.js"></script>
 </body>
 </html>
