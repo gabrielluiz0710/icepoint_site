@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import styles from './banner.css';
 import initializeSlider from './slide'; // Corrija o caminho se necessário
+import carousel1_medium from '../../assets/Imagens/carousel1-medium.jpg';
+import carousel2_medium from '../../assets/Imagens/carousel2-medium.jpg';
+import carousel1_small from '../../assets/Imagens/carousel1-small.jpg';
+import carousel2_small from '../../assets/Imagens/carousel2-small.jpg';
+
+
 
 
 function Banner() {
@@ -15,13 +21,13 @@ function Banner() {
                 <input type="radio" name="btn-radio" id="radio2" />
 
                 <div class="slide-box primeiro">
-                    <img class="img-desktop" src="src/assets/Imagens/carousel1-medium.jpg" alt="Slide 1"/>
-                    <img class="img-mobile" src="src/assets/Imagens/carousel1-small.jpg" alt="Slide 1"/>
+                    <img class="img-desktop" src={carousel1_medium} alt="Slide 1"/>
+                    <img class="img-mobile" src={carousel1_small} alt="Slide 1"/>
                 </div>
 
                 <div class="slide-box">
-                    <img class="img-desktop" src="src/assets/Imagens/carousel2-medium.jpg" alt="Slide 2"/>
-                    <img class="img-mobile" src="src/assets/Imagens/carousel2-small.jpg" alt="Slide 2"/>
+                    <img class="img-desktop" src={carousel2_medium} alt="Slide 2"/>
+                    <img class="img-mobile" src={carousel2_small} alt="Slide 2"/>
                 </div>
 
                 <div class="nav-auto">
