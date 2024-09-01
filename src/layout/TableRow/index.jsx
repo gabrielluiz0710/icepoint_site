@@ -1,18 +1,20 @@
 import React from 'react';
+import abacaxisuico from '../../assets/Imagens/Produtos/Cards/Leite/abacaxisuico.png';
+
 
 const TableRow = () => {
   return (
     <tr>
       <td>
         <div className='product'>
-          <img src="Imagens\Produtos\Cards\Leite\abacaxisuico.png" alt="Abacaxi Suíço" height="120" width="100"/>
+          <img src={abacaxisuico} alt='' height={120} width={100}/>
           <div className='info'>
-            <div className='name'>Abacaxi Suíço</div>
-            <div className='category'>Picolé ao Leite</div>
+            <div className='name'>Nome do produto</div>
+            <div className='category'>Categoria</div>
           </div>
         </div>
       </td>
-      <td>R$1,75</td>
+      <td>R$ 120</td>
       <td>
         <div className='qty'>
           <button>
@@ -24,7 +26,7 @@ const TableRow = () => {
           </button>
         </div>
       </td>
-      <td>R$240,00</td>
+      <td>R$ 240</td>
       <td>
         <button className='remove'>
           <i className='bx bx-x'></i>

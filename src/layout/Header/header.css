@@ -39,7 +39,6 @@
     justify-content: space-between;
     padding: 0 10%;
     height: 5em;
-    box-shadow: 1px 1px 4px var(--color-rosa_escuro);
     align-items: center;
 }
 

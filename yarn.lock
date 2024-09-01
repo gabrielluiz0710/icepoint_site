@@ -639,10 +639,10 @@ postcss@^8.4.27:
   version "0.0.0"
   dependencies:
     react "^18.2.0"
-    react-challenge-shopping-cart "file:../../Users/gluiz/AppData/Local/Yarn/Cache/v6/npm-react-challenge-shopping-cart-0.0.0-089b9f4e-f449-4a7d-af35-ab438e5c9290-1725169696728/node_modules/react-challenge-shopping-cart"
+    react-challenge-shopping-cart "file:../../Users/gluiz/AppData/Local/Yarn/Cache/v6/npm-react-challenge-shopping-cart-0.0.0-c239cfd4-38c9-4ecc-bf53-75db72f4f710-1725173972396/node_modules/react-challenge-shopping-cart"
     react-dom "^18.2.0"
     react-router-dom "^6.26.1"
-    sass "^1.58.0"
+    sass "^1.77.8"
     swiper "^11.1.11"
 
 react-dom@^18.2.0:
@@ -660,7 +660,7 @@ react-refresh@^0.14.0:
 
 react-router-dom@^6.26.1:
   version "6.26.1"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.26.1.tgz#a408892b41767a49dc94b3564b0e7d8e3959f623"
+  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.26.1.tgz"
   integrity sha512-veut7m41S1fLql4pLhxeSW3jlqs+4MtjRLj0xvuCEXsxusJCbs6I8yn9BxzzDX2XDgafrccY6hwjmd/bL54tFw==
   dependencies:
     "@remix-run/router" "1.19.1"
@@ -694,9 +694,9 @@ rollup@^3.27.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-sass@^1.58.0:
+sass@^1.77.8:
   version "1.77.8"
-  resolved "https://registry.npmjs.org/sass/-/sass-1.77.8.tgz"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.8.tgz#9f18b449ea401759ef7ec1752a16373e296b52bd"
   integrity sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"

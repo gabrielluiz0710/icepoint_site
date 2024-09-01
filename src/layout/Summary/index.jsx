@@ -8,11 +8,11 @@ const Summary = () => {
         <div className='info'>
           <div>
             <span>Sub-total</span>
-            <span>R$320,00</span>
+            <span>R$ 418</span>
           </div>
           <div>
             <span>Frete</span>
-            <span>R$20,00</span>
+            <span>Gratuito</span>
           </div>
           <div>
             <button>
@@ -23,7 +23,7 @@ const Summary = () => {
         </div>
         <footer>
           <span>Total</span>
-          <span>R$ 340,00</span>
+          <span>R$ 418</span>
         </footer>
       </div>
       <button>Finalizar Compra</button>
