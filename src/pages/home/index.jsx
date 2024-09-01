@@ -4,6 +4,7 @@ import Banner from '../../layout/Banner'
 import Depoimentos from '../../layout/Depoimento'
 import Footer from '../../layout/Footer'
 import Produto from '../../layout/Produto'
+import Carrinho from '../../layout/Carrinho'
 import Historia from '../../layout/Historia'
 import Resumo from '../../layout/Resumo'
 import Loja from '../../layout/Loja'
@@ -119,6 +120,7 @@ function Home() {
           </Slider>
         </div>
       </div>
+      <Carrinho />
       <Produto />
       <Historia />
       <Resumo />
