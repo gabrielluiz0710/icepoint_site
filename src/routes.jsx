@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home'
-import Localização from './pages/Localização'
-import Carrinho from './pages/Carrinho'
+import Localização from './pages/localização'
+import Carrinho from './pages/carrinho'
 
 
 function AppRoutes(){
