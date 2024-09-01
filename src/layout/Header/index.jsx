@@ -4,6 +4,7 @@ import whatsapp from '../../assets/Imagens/whatsapp.png';
 import facebook from '../../assets/Imagens/facebook.png';
 import instagram from '../../assets/Imagens/instagram.png';
 import styles from './header.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const navigationHeaderRef = useRef(null);
@@ -57,7 +58,7 @@ function Header() {
                 </svg>
             </button>
             <div className="logo_header">
-                <a href="index.html"><img src={logo_branca} alt="Ice Point" className="img_logo_header" /></a>
+                <Link to="/"><img src={logo_branca} alt="Ice Point" className="img_logo_header" /></Link>
             </div>
             <div className="navigation_header" id="navigation_header" ref={navigationHeaderRef}>
                 <button onClick={toggleSidebar} className="btn_icon_header">
@@ -65,10 +66,10 @@ function Header() {
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                 </button>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Produtos</a>
-                <a href="localizacao">Localização</a>
-                <a href="#">Contato</a>
+                <Link to="/sobre">Sobre Nós</Link>
+                <Link to="/produtos">Produtos</Link>
+                <Link to="localizacao">Localização</Link>
+                <Link to="/contatos">Contato</Link>
                 <div className="redes-sociais">
                     <a href="https://api.whatsapp.com/send?phone=5534999658035" target="_blank"><img src={whatsapp} alt="WhatsApp" className="icon_header"/></a>
                     <a href="https://www.instagram.com/icepointuberaba" target="_blank"><img src={instagram} alt="Instagram" className="icon_header"/></a>

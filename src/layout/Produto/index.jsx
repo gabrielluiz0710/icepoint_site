@@ -1,5 +1,6 @@
 import styles from './produto.css';
 import caracter2 from '../../assets/Imagens/caracter2.png';
+import { Link } from 'react-router-dom';
 
 
 function Produto() {
@@ -14,7 +15,7 @@ function Produto() {
                             <p style={{ fontFamily: 'Montserrat', fontWeight: 400, color: '#000000' }}>
                                 Experimente cada pedacinho da felicidade: Nossos produtos são feitos com carinho para trazer sorrisos em cada mordida.
                             </p>
-                            <a href="#" className="btn-ver-produto">Ver Produtos</a>
+                            <Link to="produtos" className="btn-ver-produto">Ver Produtos</Link>
                         </div>
                     </div>
                     <div className="produto-col2">
