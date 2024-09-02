@@ -39,11 +39,11 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: white;
+  background-color: var(--container-color);
 }
 
 /* For medium devices */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 728px) {
   .swiper-button-next,
   .swiper-button-prev {
     display: block;
@@ -52,10 +52,32 @@
 
 /* For large devices */
 @media screen and (min-width: 1120px) {
-  .swiper-button-prev {
-    left: 0rem;
-  }
-  .swiper-button-next {
-    right: 0rem;
-  }
+  
+}
+
+.swiper-button-prev {
+  left: -1rem;
+}
+.swiper-button-next {
+  right: -1rem;
+}
+
+.content {
+  position: relative;
+  overflow: visible; /* Permite que os elementos transbordem do contêiner */
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Garante que os botões fiquem acima do slider */
+}
+
+.swiper-button-prev {
+  left: -1rem; /* Move o botão anterior para fora do contêiner */
+}
+
+.swiper-button-next {
+  right: -1rem; /* Move o botão próximo para fora do contêiner */
 }

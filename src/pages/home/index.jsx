@@ -57,12 +57,14 @@ function Home() {
                 <img src={brigadeiro} alt="image" className="card__img" />
                 <div className="card__shadow"></div>
               </div>
-              <div className="card__data">
-                <h3 className="card__name">Brigadeiro</h3>
-                <p className="card__description">
-                  Picolé de chocolate com casquinha de chocolate meio amargo e granulado.
-                </p>
-                <a href="#" className="card__button">Ver Mais</a>
+              <div className="card_back">
+                <div className="card__data">
+                  <h3 className="card__name">Brigadeiro</h3>
+                  <p className="card__description">
+                    Picolé de chocolate com casquinha de chocolate meio amargo e granulado.
+                  </p>
+                  <a href="#" className="card__button">Ver Mais</a>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -70,12 +72,14 @@ function Home() {
                 <img src={tentacao} alt="image" className="card__img" />
                 <div className="card__shadow"></div>
               </div>
-              <div className="card__data">
-                <h3 className="card__name">Tentação</h3>
-                <p className="card__description">
-                  Picolé sabor morango com casquinha de chocolate meio amargo.
-                </p>
-                <a href="#" className="card__button">Ver mais</a>
+              <div className="card_back">
+                <div className="card__data">
+                  <h3 className="card__name">Tentação</h3>
+                  <p className="card__description">
+                    Picolé de morango ao leite com casquinha de chocolate meio amargo.
+                  </p>
+                  <a href="#" className="card__button">Ver mais</a>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -83,12 +87,14 @@ function Home() {
                 <img src={ituleitecondensado} alt="image" className="card__img" />
                 <div className="card__shadow"></div>
               </div>
-              <div className="card__data">
-                <h3 className="card__name">Ituzinho de Leite Condensado</h3>
-                <p className="card__description">
-                  Picolé de leite condensado com recheio de morango.
-                </p>
-                <a href="#" className="card__button">Ver mais</a>
+              <div className="card_back">
+                <div className="card__data">
+                  <h3 className="card__name">Ituzinho de Leite Condensado</h3>
+                  <p className="card__description">
+                    Picolé de leite condensado com recheio de morango.
+                  </p>
+                  <a href="#" className="card__button">Ver mais</a>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -96,12 +102,14 @@ function Home() {
                 <img src={itumaracuja} alt="image" className="card__img" />
                 <div className="card__shadow"></div>
               </div>
-              <div className="card__data">
-                <h3 className="card__name">Ituzinho de Maracujá</h3>
-                <p className="card__description">
-                  Picolé de maracujá com recheio de maracujá.
-                </p>
-                <a href="#" className="card__button">Ver mais</a>
+              <div className="card_back">
+                <div className="card__data">
+                  <h3 className="card__name">Ituzinho de Maracujá</h3>
+                  <p className="card__description" style={{ marginTop: '1.5rem' }}>
+                    Picolé de maracujá com recheio de maracujá.
+                  </p>
+                  <a href="#" className="card__button">Ver mais</a>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -109,12 +117,14 @@ function Home() {
                 <img src={morangoleite} alt="image" className="card__img" />
                 <div className="card__shadow"></div>
               </div>
-              <div className="card__data">
-                <h3 className="card__name">Morango ao Leite</h3>
-                <p className="card__description">
-                  Picolé de morango ao leite.
-                </p>
-                <a href="#" className="card__button">Ver mais</a>
+              <div className="card_back">
+                <div className="card__data">
+                  <h3 className="card__name">Morango ao Leite</h3>
+                  <p className="card__description"  style={{ marginTop: '1rem' }}>
+                    Picolé de morango ao leite.
+                  </p>
+                  <a href="#" className="card__button"  style={{ marginTop: '1rem' }}>Ver mais</a>
+                </div>
               </div>
             </SwiperSlide>
           </Slider>

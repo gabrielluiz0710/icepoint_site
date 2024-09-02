@@ -16,7 +16,7 @@ const Slider: React.FC<SliderProps> = ({ settings, children }) => {
         <div className="content">
             <Swiper modules={[Navigation, Pagination, A11y]}{...settings}>
             {children}
-        </Swiper>
+            </Swiper>
         </div>
     );
 };
