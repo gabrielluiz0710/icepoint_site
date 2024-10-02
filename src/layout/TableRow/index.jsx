@@ -1,34 +1,41 @@
 import React from 'react';
 import abacaxisuico from '../../assets/Imagens/Produtos/Cards/Leite/abacaxisuico.png';
+import acai from '../../assets/Imagens/Produtos/Cards/Leite/acai.png';
+import ameixa from '../../assets/Imagens/Produtos/Cards/Leite/ameixa.png';
 
-
-const TableRow = () => {
+const TableRow = ({ data, handleRemoveItem, handleUpdateItem }) => {
   return (
     <tr>
       <td>
         <div className='product'>
-          <img src={abacaxisuico} alt='' height={120} width={100}/>
+          <img src={data.image} alt={data.name} height={120} width={100} />
           <div className='info'>
-            <div className='name'>Nome do produto</div>
-            <div className='category'>Categoria</div>
+            <div className='name'>{data.name}</div>
+            <div className='category'>{data.category}</div>
           </div>
         </div>
       </td>
-      <td>R$ 120</td>
+      <td>R$ {data.price}</td>
       <td>
         <div className='qty'>
-          <button>
+          <button onClick={() => {
+            handleUpdateItem(data, 'decrease')
+          }}>
             <i className='bx bx-minus'></i>
           </button>
-          <span>2</span>
-          <button>
+          <span>{data.quantity}</span>
+          <button onClick={() => {
+            handleUpdateItem(data, 'increase')
+          }}>
             <i className='bx bx-plus'></i>
           </button>
         </div>
       </td>
-      <td>R$ 240</td>
+      <td>R$ {data.price * data.quantity}</td>
       <td>
-        <button className='remove'>
+        <button className='remove' onClick={() => {
+          handleRemoveItem(data)
+        }}>
           <i className='bx bx-x'></i>
         </button>
       </td>
