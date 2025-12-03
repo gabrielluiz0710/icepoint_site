@@ -93,6 +93,7 @@ function Carrinho(){
             <Header />
             <main>
                 <PageTitle data={'Seu carrinho'} />
+                <button onClick={handleAddItem}>add</button>
                 <div className='content'>
                 <section>
                     <table>
